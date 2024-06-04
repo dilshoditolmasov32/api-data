@@ -25,14 +25,7 @@ export default function AppView() {
           />
         </Grid>
 
-        <Grid
-          xs={12}
-          sm={6}
-          md={3}
-          onClick={() => {
-            navigation('user');
-          }}
-        >
+        <Grid xs={12} sm={6} md={3} onClick={() => navigation('user')}>
           <AppWidgetSummary
             title="All users   about"
             total={1352831}

@@ -17,7 +17,7 @@ export default function ProductsPage() {
 
   return (
     <>
-      <h1>Products</h1>
+      <h1 style={{ color: '#252129' }}>Products</h1>
       <section className="h-100 gradient-custom">
         <Container className="py-5">
           <Row className="d-flex justify-content-center my-4">

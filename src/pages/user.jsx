@@ -1,5 +1,5 @@
-import axios from '../api';
 import { useState, useEffect } from 'react';
+import axios from '../api';
 
 export default function UserPage() {
   const [data, setData] = useState([]);
@@ -11,7 +11,7 @@ export default function UserPage() {
   }, []);
   return (
     <>
-      <h1>Users data</h1>
+      <h1 style={{ color: '#252129' }}>Users data</h1>
       <table className="table table-striped m-2">
         <thead>
           <tr>
