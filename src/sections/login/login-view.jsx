@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -17,7 +16,6 @@ import { useRouter } from 'src/routes/hooks';
 
 import { bgGradient } from 'src/theme/css';
 
-import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
@@ -35,7 +33,7 @@ export default function LoginView() {
 
   const renderForm = (
     <>
-      <Stack spacing={3}>
+      <Stack spacing={3} >
         <TextField name="email" label="Email address" />
 
         <TextField
@@ -54,11 +52,7 @@ export default function LoginView() {
         />
       </Stack>
 
-      <Stack direction="row" alignItems="center" justifyContent="flex-end" sx={{ my: 3 }}>
-        <Link variant="subtitle2" underline="hover">
-          Forgot password?
-        </Link>
-      </Stack>
+      <Stack direction="row" alignItems="center" justifyContent="flex-end" sx={{ my: 2 }}></Stack>
 
       <LoadingButton
         fullWidth
@@ -81,15 +75,10 @@ export default function LoginView() {
           imgUrl: '/assets/background/overlay_4.jpg',
         }),
         height: 1,
+       
       }}
     >
-      <Logo
-        sx={{
-          position: 'fixed',
-          top: { xs: 16, md: 24 },
-          left: { xs: 16, md: 24 },
-        }}
-      />
+  
 
       <Stack alignItems="center" justifyContent="center" sx={{ height: 1 }}>
         <Card
@@ -97,18 +86,12 @@ export default function LoginView() {
             p: 5,
             width: 1,
             maxWidth: 420,
+            marginTop:10
           }}
         >
-          <Typography variant="h4">Sign in to Minimal</Typography>
+          <Typography variant="h4">Sign in </Typography>
 
-          <Typography variant="body2" sx={{ mt: 2, mb: 5 }}>
-            Don’t have an account?
-            <Link variant="subtitle2" sx={{ ml: 0.5 }}>
-              Get started
-            </Link>
-          </Typography>
-
-          <Stack direction="row" spacing={2}>
+          <Stack direction="row" spacing={2} marginTop={"10px"}>
             <Button
               fullWidth
               size="large"
